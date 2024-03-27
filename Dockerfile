@@ -5,7 +5,7 @@ FROM python:3.11
 WORKDIR /app
 
 # Add the current directory contents into the container at /app
-ADD . /app
+ADD src/* /app
 
 # Install any needed packages specified
 RUN pip install --no-cache-dir requests
